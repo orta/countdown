@@ -25,7 +25,14 @@ get '/' do
 end
 
 get '/:permalink' do
-  data = RestClient.get "#{DB}/#{params[:permalink]}"
-  @result = JSON.parse(data)
-  haml :post
+  begin 
+    @data = RestClient.get "#{DB}/#{params[:permalink]}"
+  rescue 
+    haml :fourohfour
+  end
+  
+  if @data
+    @result = JSON.parse(@data)
+    haml :post
+  end
 end
