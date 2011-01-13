@@ -1,6 +1,8 @@
 :javascript 
-  alert(" #{ @result['date'] }")
+  head.ready( function() {
+  var bDay = new Date("#{ @result['date'] }");
+  $('#countdown').countdown({until: bDay});
+  });
 
-%h2 Welcome
-%p= @result['id']
-%p= @result['date']
+%h2 Welcome #{ @result['id'] }
+%div#countdown 
