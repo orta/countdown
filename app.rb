@@ -20,7 +20,6 @@ end
 get '/' do
   data = RestClient.get "#{DB}/_all_docs"
   @all_pages = JSON.parse(data)
-  puts @all_pages
   haml :index
 end
 

@@ -1,13 +1,27 @@
 $blue: #3bbfce;
+$greyblue: #8EBDC3;
 $red: #6A18CC;
 $margin: 16px;
 
 html {
-  padding: $margin / 2;
-  margin: $margin / 2;
   border: 2px $blue solid;
+  background-color: $blue;
 }
 
 body {
-  background-color: $blue;
+  padding: $margin / 2 0;
+  margin: $margin / 2 auto;
+  
+  width: 1024px;
+  background-color: $greyblue;
+}
+
+h1{
+  text-align: center;
+  font-family: 'QuicksandDash';
+  font-size: 120px;
+}
+
+div#content {
+  padding: 1em;
 }

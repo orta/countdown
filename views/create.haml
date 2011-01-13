@@ -10,13 +10,10 @@
   %fieldset
     %ol
       %li
-        %label{:for => "permalink"} Address:
+        %label{:for => "permalink"} Address (lowercase):
         %input{:type => "text", :name => "permalink", :class => "text"}
       %li
         %label{:for => "date"} date:
         %input{:type => "text", :name => "date", :class => "text", :id => "date"}
-      %li
-        %label{:for => "message"} Message:
-        %textarea{:name => "body"}
         
     %input{:type => "submit", :value => "Send", :class => "button"}
