@@ -50,11 +50,9 @@ end
 
 # fall back to someones page
 get '/:permalink' do
-  begin 
-    @data = RestClient.get "#{DB}/#{params[:permalink]}"
-  rescue 
-    haml :fourohfour
-  end
+
+    @data = RestClient.get "#{DB}/#{params[:permalink]}" rescue return "404" 
+
   
   if @data
     @result = JSON.parse(@data)
