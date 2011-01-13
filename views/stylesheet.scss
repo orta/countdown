@@ -1,0 +1,13 @@
+$blue: #3bbfce;
+$red: #6A18CC;
+$margin: 16px;
+
+html {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border: 2px $blue solid;
+}
+
+body {
+  background-color: $blue;
+}

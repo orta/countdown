@@ -1,0 +1,40 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    backports (1.18.2)
+    haml (3.0.25)
+    json (1.4.6)
+    json (1.4.6-java)
+    mime-types (1.16)
+    monkey-lib (0.5.4)
+      backports
+    rack (1.2.1)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
+    sass (3.1.0.alpha.214)
+    sinatra (1.1.2)
+      rack (~> 1.1)
+      tilt (~> 1.2)
+    sinatra-advanced-routes (0.5.1)
+      monkey-lib (~> 0.5.0)
+      sinatra (~> 1.0)
+      sinatra-sugar (~> 0.5.0)
+    sinatra-reloader (0.5.0)
+      sinatra (~> 1.0)
+      sinatra-advanced-routes (~> 0.5.0)
+    sinatra-sugar (0.5.0)
+      monkey-lib (~> 0.5.0)
+      sinatra (~> 1.0)
+    tilt (1.2.1)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  haml
+  json
+  rest-client
+  sass
+  sinatra
+  sinatra-reloader

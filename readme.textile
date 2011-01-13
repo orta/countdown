@@ -1,0 +1,9 @@
+h1. countdown
+
+sinatra - the framework we're working with
+haml - the templating language that HTML is made with
+scss - the templating language our CSS is generated with
+couchDB the way we store / retrive data
+this is my first time with all of them also
+
+start it by running *bundle install* then *ruby app.rb* in the directory, with luck and some magic everything should just work.
