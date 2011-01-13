@@ -1,3 +1,11 @@
+:javascript
+  head.ready( function() {
+    $('#date').datepicker(); 
+  });
+
+
+  
+
 %form{ :action => "", :method => "post"}
   %fieldset
     %ol
@@ -6,7 +14,7 @@
         %input{:type => "text", :name => "permalink", :class => "text"}
       %li
         %label{:for => "date"} date:
-        %input{:type => "text", :date => "mail", :class => "text"}
+        %input{:type => "text", :name => "date", :class => "text", :id => "date"}
       %li
         %label{:for => "message"} Message:
         %textarea{:name => "body"}

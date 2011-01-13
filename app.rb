@@ -41,13 +41,14 @@ post '/create' do
   new_doc['_rev'] = rev if rev
 
   result = RestClient.put doc_url, new_doc.to_json, :content_type => 'application/json'
+  puts "out : " + new_doc.to_json
+  puts "in  : " + result
   
   # redirect!
   redirect '/' + params[:permalink]
-  
-  haml :contact
 end
 
+# fall back to someones page
 get '/:permalink' do
   begin 
     @data = RestClient.get "#{DB}/#{params[:permalink]}"
