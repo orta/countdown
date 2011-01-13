@@ -1,0 +1,14 @@
+%form{ :action => "", :method => "post"}
+  %fieldset
+    %ol
+      %li
+        %label{:for => "permalink"} Address:
+        %input{:type => "text", :name => "permalink", :class => "text"}
+      %li
+        %label{:for => "date"} date:
+        %input{:type => "text", :date => "mail", :class => "text"}
+      %li
+        %label{:for => "message"} Message:
+        %textarea{:name => "body"}
+        
+    %input{:type => "submit", :value => "Send", :class => "button"}
